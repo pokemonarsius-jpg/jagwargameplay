@@ -401,3 +401,13 @@ in the Software without restriction...
 **If you enjoy this game, please consider giving it a ⭐ star on GitHub!**
 
 Made with ❤️ and Python
+
+
+# Build the production image (default target)
+docker build -t emotion-detector:latest .
+
+# Build the development image
+docker build --target development -t emotion-detector:dev .
+
+# Build the testing image
+docker build --target testing -t emotion-detector:test .
