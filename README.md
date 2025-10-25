@@ -54,110 +54,51 @@ Built entirely with Python and Pygame, this game features custom sprite animatio
 ```
 ┌─────────────────────────────────────┐
 │                                     │
-│         🐆 JAGUAR HUNT 🐆           │
+│        🐆 JAGUAR HUNT 🐆           │
 │                                     │
 │       Press SPACE to Start          │
+│       Press ESC to Quit             │
 │                                     │
-│           Controls:                 │
-│    Arrow Keys / WASD - Move         │
-│         SPACE - Pounce              │
-│          ESC - Pause                │
-│                                     │
-│    Hunt prey, avoid obstacles!      │
+│    Use Arrow Keys or WASD to Move   │
+│    Press SPACEBAR to Pounce         │
 │                                     │
 └─────────────────────────────────────┘
 ```
 
-*The welcoming main menu with clear instructions*
-
----
-
-### Gameplay Screen
-```
-┌─────────────────────────────────────────────────────┐
-│ Score: 150        Lives: 3         High: 420        │
-│                                                     │
-│            🌳                    🐇                 │
-│                                                     │
-│                  🐆 (Jaguar with golden aura)      │
-│         🌳                                          │
-│                        🦌                           │
-│                                                     │
-│               ░░░░░░ POUNCE READY! ░░░░░░          │
-└─────────────────────────────────────────────────────┘
-```
-
-*Intense hunting action with prey and obstacles*
-
----
-
-### Pounce Action
-```
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│                   ✨✨✨✨✨                        │
-│              ✨   🐆 💫   ✨                        │
-│           ✨  (Golden Glow) 🐇  ✨                  │
-│                   ✨✨✨✨✨                        │
-│                                                     │
-│         Particles explode on successful catch!      │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-```
-
-*Spectacular visual effects when catching prey*
-
----
-
-### Game Over Screen
+### Gameplay
 ```
 ┌─────────────────────────────────────┐
-│                                     │
-│          🔴 GAME OVER 🔴            │
-│                                     │
-│        Final Score: 420             │
-│        High Score: 550              │
-│                                     │
-│       Press R to Restart            │
-│                                     │
+│  Score: 150    Lives: ♥♥♥          │
+│  High Score: 420                    │
+├─────────────────────────────────────┤
+│          🌳                         │
+│    🐰              🐆              │
+│              🌳                     │
+│         🦌                          │
+│                      🌳            │
+│    🌳        🐵                     │
+└─────────────────────────────────────┘
+│  Pounce Ready: ▓▓▓▓▓▓░░░░         │
 └─────────────────────────────────────┘
 ```
 
-*See your achievements and try again*
-
 ---
 
-## 🎯 Prey Types
-
-| Prey | Points | Description | Visual |
-|------|--------|-------------|--------|
-| **Rabbit** 🐇 | 10 | Fast and nimble, moves quickly | White with long ears |
-| **Deer** 🦌 | 10 | Medium speed, good target | Brown with antlers |
-| **Monkey** 🐒 | 10 | Unpredictable movement | Brown with curved tail |
-
----
-
-## 🚧 Obstacles
-
-| Obstacle | Damage | Description | Visual |
-|----------|--------|-------------|--------|
-| **Tree** 🌳 | 1 Life | Solid obstacle in your path | Brown trunk with green foliage |
-
----
-
-## 💻 Installation
+## 🚀 Installation
 
 ### Prerequisites
 - Python 3.7 or higher
 - pip (Python package installer)
 
-### Step 1: Clone the Repository
+### Step-by-Step Guide
+
+1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/jaguar-hunt-game.git
-cd jaguar-hunt-game
+git clone https://github.com/pokemonarsius-jpg/jagwargameplay.git
+cd jagwargameplay
 ```
 
-### Step 2: Install Dependencies
+2. **Install required packages**
 ```bash
 pip install pygame
 ```
@@ -167,9 +108,9 @@ Or use requirements.txt:
 pip install -r requirements.txt
 ```
 
-### Step 3: Run the Game
+3. **Run the game**
 ```bash
-python jaguar_game.py
+python main.py
 ```
 
 ---
@@ -177,164 +118,206 @@ python jaguar_game.py
 ## 🎮 How to Play
 
 ### Controls
+| Action | Keys |
+|--------|------|
+| Move Up | ↑ or W |
+| Move Down | ↓ or S |
+| Move Left | ← or A |
+| Move Right | → or D |
+| Pounce | SPACEBAR |
+| Pause | P or ESC |
+| Quit | ESC (on menu) |
 
-| Key | Action |
-|-----|--------|
-| **Arrow Keys** or **WASD** | Move the jaguar in 4 directions |
-| **SPACE** | Activate pounce to catch prey |
-| **ESC** | Pause/Unpause the game |
-| **R** | Restart after game over |
+### Gameplay Instructions
 
-### Gameplay Tips
+1. **Objective**: Hunt as many prey animals as possible while avoiding obstacles
 
-1. **🎯 Timing is Everything** - Wait for the right moment to pounce on prey
-2. **👀 Watch the Cooldown** - Your pounce ability needs time to recharge
-3. **🌳 Avoid Obstacles** - Trees will damage you and cost lives
-4. **💨 Keep Moving** - Stay mobile to catch more prey and dodge obstacles
-5. **📈 Score Strategy** - Chain catches quickly for higher scores
-6. **⚡ Golden Glow** - When pouncing, you have a golden aura - that's your catching window!
+2. **Movement**: Use arrow keys or WASD to move your jaguar around the screen
 
-### Objective
+3. **Pounce**: Press SPACEBAR to perform a special pounce attack
+   - Pounce has a cooldown period
+   - Use it strategically to catch fast-moving prey
+   - The cooldown bar shows when you can pounce again
 
-- **Catch as many prey animals as possible** using your pounce ability
-- **Avoid tree obstacles** that reduce your lives
-- **Survive as long as possible** while the difficulty increases
-- **Beat your high score** and become the ultimate jungle hunter!
+4. **Scoring**:
+   - 🐰 Rabbit: 10 points
+   - 🦌 Deer: 20 points
+   - 🐵 Monkey: 30 points
 
----
+5. **Lives**: You have 3 lives
+   - Colliding with trees costs 1 life
+   - Game ends when all lives are lost
 
-## 🎨 Game Mechanics
-
-### Pounce System
-The pounce is your primary hunting tool:
-- ⏱️ **Duration**: 0.25 seconds of active hunting
-- 🔄 **Cooldown**: 0.5 seconds recharge time
-- ✨ **Visual Effect**: Golden aura and particle effects
-- 🎯 **Function**: Only works during pounce - time it perfectly!
-
-### Difficulty Progression
-- Game starts at a moderate pace
-- Every 5 seconds, spawn rate increases
-- More obstacles and prey appear simultaneously
-- Tests your reflexes and strategic thinking
-
-### Scoring System
-- Each prey caught: **+10 points**
-- No score for missed prey
-- High score persists across game sessions
+6. **Difficulty**: The game progressively gets harder
+   - Prey moves faster over time
+   - More obstacles appear
+   - Adapt your strategy!
 
 ---
 
-## 📂 Project Structure
+## 🛠️ VS Code Development Setup
+
+This project includes pre-configured VS Code workspace settings for an optimal development experience. The `.vscode` directory contains configurations that enhance productivity and maintain code quality.
+
+### Included VS Code Features
+
+✅ **Auto-save enabled** (1 second delay)
+- Changes are automatically saved after 1 second of inactivity
+- Never lose your work!
+
+✅ **Format on save**
+- Code is automatically formatted when you save
+- Maintains consistent code style
+
+✅ **Auto import organization**
+- Python imports are automatically sorted and organized
+- Removes unused imports
+
+✅ **Bracket pair colorization**
+- Matching brackets are colored for easy identification
+- Helps prevent syntax errors
+
+✅ **Spell checker configured**
+- Catches typos in comments and strings
+- Improves documentation quality
+
+✅ **Git integration**
+- Built-in source control
+- Easy commit, push, and pull operations
+
+✅ **Docker support**
+- Ready for containerized development
+- Consistent environment across machines
+
+✅ **Live reload**
+- See changes instantly during development
+- Speeds up the development cycle
+
+✅ **Debug configurations ready**
+- Pre-configured Python debugging
+- Set breakpoints and inspect variables
+
+### Recommended Extensions
+
+The workspace includes recommendations for VS Code extensions:
+- **Python** - IntelliSense, linting, debugging
+- **Pylint** - Python code analysis
+- **autopep8** - Code formatting
+- **GitLens** - Enhanced Git capabilities
+
+### Using the VS Code Setup
+
+1. Open the project folder in VS Code:
+```bash
+code jagwargameplay
+```
+
+2. Install recommended extensions when prompted
+
+3. The workspace settings will be automatically applied
+
+4. Start coding with enhanced productivity!
+
+---
+
+## 🏗️ Project Structure
 
 ```
-jaguar-hunt-game/
+jagwargameplay/
 │
-├── jaguar_game.py          # Main game file (500+ lines)
-├── requirements.txt        # Python dependencies
-├── README.md              # This file
-├── LICENSE                # MIT License
+├── main.py              # Main game entry point
+├── game.py              # Core game logic
+├── player.py            # Jaguar player class
+├── prey.py              # Prey animals classes
+├── obstacle.py          # Obstacle classes
+├── particle.py          # Particle effects system
+├── constants.py         # Game constants and settings
+├── utils.py             # Utility functions
 │
-└── screenshots/           # Game screenshots
-    ├── menu.png
-    ├── gameplay.png
-    ├── pounce.png
-    └── gameover.png
+├── assets/              # Game assets
+│   ├── sprites/         # Character and object sprites
+│   ├── sounds/          # Sound effects and music
+│   └── fonts/           # Custom fonts
+│
+├── .vscode/             # VS Code workspace settings
+│   ├── settings.json    # Editor configurations
+│   └── launch.json      # Debug configurations
+│
+├── requirements.txt     # Python dependencies
+├── README.md            # This file
+└── LICENSE              # MIT License
 ```
 
 ---
 
-## 🔧 Technical Details
+## 🐛 Troubleshooting
 
-### Built With
-- **Python 3.7+** - Programming language
-- **Pygame 2.0+** - Game development library
+### Common Issues
 
-### Key Components
-
-#### Classes
-- `Jaguar` - Player character with movement and pounce mechanics
-- `Prey` - Various huntable animals (rabbit, deer, monkey)
-- `Obstacle` - Hazardous trees
-- `Particle` - Visual effects system
-- `Game` - Main game loop and state management
-
-#### Game States
-- `MENU` - Main menu screen
-- `PLAYING` - Active gameplay
-- `PAUSED` - Game paused
-- `GAME_OVER` - End screen with score
-
-### Performance
-- **60 FPS** smooth gameplay
-- Efficient sprite management
-- Optimized collision detection
-- Low memory footprint
-
----
-
-## 🎥 Gameplay Demo
-
-```
-Frame 1: Jaguar spots a rabbit
-  🐆 ────────▶ 🐇
-
-Frame 2: Player presses SPACE to pounce
-  ✨🐆✨ ─────▶ 🐇
-
-Frame 3: Successful catch with particle explosion!
-  ✨💥✨ Score +10!
-
-Frame 4: Avoid the incoming tree obstacle!
-      🐆
-         ↓
-  🌳 ◀────────────
+**Issue**: `pygame not found`
+```bash
+# Solution: Install pygame
+pip install pygame
 ```
 
----
+**Issue**: Game runs slowly
+- Solution: Close other applications
+- Check your Python version (3.7+ recommended)
+- Update your graphics drivers
 
-## 🚀 Future Enhancements
+**Issue**: No sound
+- Check system volume
+- Ensure pygame.mixer is initialized
+- Verify sound files are in assets/sounds/
 
-### Planned Features
-- [ ] 🔊 Sound effects and background music
-- [ ] 🏆 Achievement system
-- [ ] 💾 Save/load game progress
-- [ ] 🎨 Multiple jungle environments
-- [ ] 🐾 Power-ups (speed boost, invincibility)
-- [ ] 📊 Statistics tracking (total catches, accuracy)
-- [ ] 🎯 Combo system for consecutive catches
-- [ ] 🌙 Day/night cycle
-- [ ] 🏅 Online leaderboard
-- [ ] 🎮 Gamepad support
-
-### Community Requests
-- Boss battles with larger prey
-- Different jaguar skins
-- Multiplayer mode
-- Mobile version
+**Issue**: Sprite images not loading
+- Verify assets/sprites/ directory exists
+- Check file paths in code
+- Ensure image files are in correct format (PNG recommended)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+We love contributions! Here's how you can help:
+
+### How to Contribute
 
 1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
+2. **Create a new branch**
+```bash
+git checkout -b feature/amazing-feature
+```
+3. **Make your changes**
+4. **Commit with descriptive message**
+```bash
+git commit -m 'Add amazing feature'
+```
+5. **Push to your branch**
+```bash
+git push origin feature/amazing-feature
+```
+6. **Open a Pull Request**
 
 ### Contribution Guidelines
+
 - Follow PEP 8 style guide for Python code
 - Add comments for complex logic
 - Test your changes thoroughly
-- Update README if adding new features
-- Keep commits focused and descriptive
+- Update documentation if needed
+- Keep commits atomic and well-described
 
----
+### Areas for Contribution
 
-## 🐛 Bug Reports
+- 🎨 New sprite designs
+- 🎵 Sound effects and music
+- 🐛 Bug fixes
+- ✨ New features
+- 📚 Documentation improvements
+- 🌍 Translations
+- ⚡ Performance optimizations
+
+### Reporting Bugs
 
 Found a bug? Please open an issue with:
 - Clear description of the problem
@@ -356,7 +339,21 @@ Copyright (c) 2025 Jaguar Hunt Game
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 ---
@@ -401,3 +398,5 @@ in the Software without restriction...
 **If you enjoy this game, please consider giving it a ⭐ star on GitHub!**
 
 Made with ❤️ and Python
+
+</div>
